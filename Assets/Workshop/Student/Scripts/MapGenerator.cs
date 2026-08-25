@@ -21,19 +21,19 @@ namespace Workshop.Student
         };
 
         // 1. declare Players variable
-        public GameObject[] Players;
+        // public GameObject[] Players;
 
         // 7. declare Exit variable
-        public GameObject Exit;
+        // public GameObject Exit;
 
 
         public void Start()
         {
             // 1. random player at the position <0, 0> map
-            {
-                int r = UnityEngine.Random.Range(0, Players.Length);
-                Instantiate(Players[r], new Vector2(0, 0), Quaternion.identity);
-            }
+            // {
+            //     int r = UnityEngine.Random.Range(0, Players.Length);
+            //     Instantiate(Players[r], new Vector2(0, 0), Quaternion.identity);
+            // }
 
             // 2. create obstacles
             for (int posX = 0; posX < 5; posX++)
@@ -103,7 +103,7 @@ namespace Workshop.Student
             }
 
             // 7. place exit
-            Instantiate(Exit, new Vector2(columns - 1, rows - 1), Quaternion.identity);
+            // Instantiate(Exit, new Vector2(columns - 1, rows - 1), Quaternion.identity);
 
         }
     }
